@@ -1,4 +1,3 @@
-
 import WaterDOM from '../index'
 
 test('WaterDOM', () => {
