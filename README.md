@@ -3,20 +3,27 @@
 
 
 ## Running steps
-
-1. Developement
+1. Install Dependencies
 ```shell
 $ npm i
+```
+
+2. Developement
+```shell
 $ npm start
+```
+
+3. Test
+```shell
 $ npm test
 ```
 
-2. Build
+4. Build
 ```shell
 $ npm build
 ```
 
-3. Publish
+5. Publish
 ```shell
 $ npm publish
 ```
