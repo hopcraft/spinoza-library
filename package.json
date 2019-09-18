@@ -1,6 +1,6 @@
 {
   "name": "spinoza-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Implementation of some classical programming concepts, such as promise, async/await, mvvm, vdom, csp, etc.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
