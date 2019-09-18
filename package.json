@@ -1,0 +1,56 @@
+{
+  "name": "spinoza-library",
+  "version": "1.0.1",
+  "description": "Implementation of some classical programming concepts, such as promise, async/await, mvvm, vdom, csp, etc.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "2fa": "npm profile enable-2fa auth-and-writes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hopcraft/spinoza-library.git"
+  },
+  "keywords": [
+    "Promise",
+    "MVVM",
+    "VDom",
+    "TypeScript"
+  ],
+  "author": "Hopcraft Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hopcraft/spinoza-library/issues"
+  },
+  "homepage": "https://github.com/hopcraft/spinoza-library#readme",
+  "prepublish": "tsc",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5",
+    "@types/webpack": "^4.39.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
