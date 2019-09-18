@@ -4,7 +4,7 @@ interface IOptions {
 }
 
 export default class WaterDOM {
-  $el: string
+  public $el: string
 
   constructor($el: string) {
     this.$el = $el
