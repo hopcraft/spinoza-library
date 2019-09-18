@@ -1,5 +1,5 @@
 
-import WaterDOM from '../src/water-dom'
+import { WaterDOM } from '../src/index'
 
 let waterDom = new WaterDOM('<div>Water DOM</div>')
 let $elem = document.createElement('div')
@@ -13,5 +13,5 @@ if ($app) {
       $elem.appendChild($text)
     )
   )
-  $app.style.backgroundColor = 'green'
+  $app.style.backgroundColor = 'pink'
 }

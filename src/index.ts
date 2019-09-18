@@ -1,4 +1,5 @@
+import WaterDOM from "./water-dom";
 
-export const Spinoza = (author: string) => {
-  return `Spinoza AINeuroX ${author}`
+export {
+  WaterDOM
 }
