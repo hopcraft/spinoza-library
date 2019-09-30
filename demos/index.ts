@@ -1,14 +1,13 @@
 
-import { WaterDOM } from '../src/index'
+import Water from '../src/index'
 
-let waterDom = new WaterDOM({
-  el: '<div>Water DOM</div>',
-  data: {},
+let vm = window['vm'] = new Water({
+  el: '#app',
+  data: {
+    halo: {
+      greeting: 'Spinoza的微笑🙂',
+      feedback: '好的故事'
+    }
+  },
   methods: {}
 })
-
-let $app = document.querySelector('#app') as HTMLInputElement
-
-if ($app) {
-  console.log(waterDom.el)
-}

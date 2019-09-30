@@ -1,5 +1,3 @@
-import WaterDOM from "./water-dom";
+import Water from "./water-vm"
 
-export {
-  WaterDOM
-}
+export default Water

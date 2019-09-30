@@ -1,3 +1,4 @@
+export * from '../defs'
 
 // Arbitary Fields Object: 包含任意字段的对象类型定义
 export interface AFO {
@@ -7,4 +8,8 @@ export interface AFO {
 // 返回 AFO 格式对象的函数类型
 export interface IAfoFn {
   (): AFO
+}
+
+export function isIAfoFn(data: any): boolean {
+  return <IAfoFn>data !== undefined
 }
